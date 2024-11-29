@@ -5,7 +5,7 @@
   "scripts": {
     "start": "tsc && node dist/index.js",
     "dev": "nodemon src/index.ts",
-    "build": "webpack --config webpack.config.js"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
