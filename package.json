@@ -1,7 +1,7 @@
 {
   "name": "random_value_api",
   "version": "1.0.0",
-  "main": "webpack.config.js",
+  "main": "index.js",
   "scripts": {
     "start": "tsc && node dist/index.js",
     "dev": "nodemon src/index.ts",
