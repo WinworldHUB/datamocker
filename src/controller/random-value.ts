@@ -15,7 +15,7 @@ export const getValueHandler: RequestHandler = (req, res) => {
   
 
   try {
-    let threshold_value = parsedSeed + 10;
+    let threshold_value = parsedSeed + 5;
 
     if (threshold_value >= 100) {
       threshold_value = 99;
