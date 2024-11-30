@@ -11,6 +11,9 @@ export const getValueHandler: RequestHandler = (req, res) => {
       .json({ message: "Seed is required and must be a number" });
   }
 
+  console.log(`Seed: ${parsedSeed}`);
+  
+
   try {
     let threshold_value = parsedSeed + 10;
 
@@ -19,7 +22,8 @@ export const getValueHandler: RequestHandler = (req, res) => {
     }
 
     const random_value = randomInteger(parsedSeed, threshold_value);
-
+    console.log(`Random Value: ${random_value}`);
+    
     return res.status(200).json({ value: random_value });
   } catch (err) {
     console.error(err); // Log the error for debugging
