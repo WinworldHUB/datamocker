@@ -16,6 +16,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
     "http://localhost:3002",
     "http://localhost:3001",
     "http://localhost:3000",
+    "https://heatmonitor.netlify.app",
   ];
   const origin = req.headers.origin ?? "";
   if (allowedOrigins.includes(origin)) {
